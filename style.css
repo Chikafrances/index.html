@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.google.com/specimen/Lexend+Deca');
+
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+ }
+
+ body {
+    width: 100%;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    
+    
+
+ }
+img{
+    margin-bottom: 30px;
+}
+
+
+
+ .main-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    line-height: 25px;
+    
+
+ }
+
+
+
+
+ h1 {
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 30px;
+    
+ }
+
+ p {
+    height:200px;
+    color:  hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    /* margin-bottom: 50px;     */
+ }
+
+ .section-a {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 20px 0px 0px 20px;
+    padding: 40px;
+ }
+ .section-b {
+    background-color: hsl(184, 100%, 22%);
+    padding: 40px;
+ }
+
+ .section-c {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 20px 20px 0px;
+    padding: 40px;
+ }
+
+  button {
+    background: transparent;
+    border: 2px solid;
+    border-color:azure;
+    border-radius: 25px;
+    padding: 1rem 2rem 1rem 2rem;
+    color: azure;
+
+ }
+
+/* for mobile */
+@media screen and  (max-width: 375px){
+   body{
+     background: rgb(180, 54, 54);
+   }
+  .main-section {
+     width: 50%;
+     display: block;
+     flex-direction: column;   
+   }
+   .section-b{
+      margin-top:10px;
+      margin-bottom: 10px;
+   }
+}
+
+
+
+/* for Desktop */
+@media screen and (max-width:1400px){
+   body{
+     background: rgb(32, 17, 161);
+   }
+  .main-section {
+     width: 50%;
+     display: block;
+     flex-direction: column;   
+   }
+}
